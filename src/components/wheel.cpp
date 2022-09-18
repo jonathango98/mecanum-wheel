@@ -16,9 +16,9 @@ Wheel::Wheel(int dir_pin1, int dir_pin2){
 
 }
 
-void Wheel::start(bool direction){
+void Wheel::start(int direction){
 
-    if (direction){
+    if (direction == 1){
 
         GPIO::output(dir_pin1, GPIO::HIGH);
         GPIO::output(dir_pin2, GPIO::LOW);

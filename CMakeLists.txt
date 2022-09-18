@@ -9,5 +9,8 @@ find_package(JetsonGPIO REQUIRED)
 
 add_library(wheel src/components/wheel.cpp)
 
+add_library(car src/car.cpp)
+target_link_libraries(car PRIVATE wheel)
+
 add_executable(main src/main.cpp)
-target_link_libraries(main PRIVATE JetsonGPIO pthread wheel)
+target_link_libraries(main PRIVATE JetsonGPIO pthread car)
