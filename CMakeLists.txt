@@ -7,5 +7,7 @@ set(EXECUTABLE_OUTPUT_PATH  ${PROJECT_SOURCE_DIR}/bin/)
 
 find_package(JetsonGPIO REQUIRED)
 
+add_library(wheel src/wheel.cpp)
+
 add_executable(main src/main.cpp)
-target_link_libraries(main PRIVATE JetsonGPIO pthread)
+target_link_libraries(main PRIVATE JetsonGPIO pthread wheel)
