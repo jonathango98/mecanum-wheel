@@ -3,7 +3,7 @@
 
 #include <JetsonGPIO.h>
 
-#include "wheel.h"
+#include "components/wheel.h"
 
 using namespace std;
 
