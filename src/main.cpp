@@ -12,16 +12,9 @@ int main(){
     GPIO::setmode(GPIO::BOARD);
     GPIO::setup(7, GPIO::OUT);
 
-    Wheel front_left(0);
-    Wheel front_right(1);
-    Wheel back_left(2);
-    Wheel back_right(3);
-
     int n = 0;
 
     while (n < 5){
-        
-        front_left.turn();
 
         cout << "ON" << endl;
         GPIO::output(7, GPIO::HIGH);

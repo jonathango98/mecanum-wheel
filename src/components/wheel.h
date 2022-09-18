@@ -1,7 +1,11 @@
 class Wheel{
     public:
-        Wheel(int input_location);
-        int location;
+        Wheel(int dir_pin1, int dir_pin2);
 
-        void turn();
+        int dir_pin1;
+        int dir_pin2;
+
+        void start(bool direction);
+
+        void stop();
 };
