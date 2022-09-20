@@ -5,9 +5,13 @@ Jonathan Goenadibrata's Mecanum Wheel Project
 ```
 $ git clone git@github.com:jonathango98/mecanum-wheel.git
 $ mkdir build && cd build
-$ cmake ../src
+$ cmake ..
 $ make
 ```
 
+## Running the program
+```
+$ ./bin/main
+```
 
 
